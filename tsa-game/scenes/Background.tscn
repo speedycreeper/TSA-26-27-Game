@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://dk7wc36dmbraq"]
+
+[sub_resource type="Gradient" id="Gradient_btfmb"]
+offsets = PackedFloat32Array(0.6486486, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_4lbau"]
+noise_type = 3
+fractal_lacunarity = -2.92
+fractal_gain = 1.195
+fractal_weighted_strength = 0.2
+fractal_ping_pong_strength = 6.645
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_l6r8x"]
+width = 1024
+height = 1024
+noise = SubResource("FastNoiseLite_4lbau")
+color_ramp = SubResource("Gradient_btfmb")
+seamless = true
+seamless_blend_skirt = 0.0
+
+[node name="Background" type="Node2D" unique_id=562226334]
+
+[node name="space" type="Sprite2D" parent="." unique_id=2010281684]
+texture_repeat = 2
+scale = Vector2(0.95840144, 0.95549315)
+texture = SubResource("NoiseTexture2D_l6r8x")
+region_enabled = true
+region_rect = Rect2(0, 0, 5120, 5120)

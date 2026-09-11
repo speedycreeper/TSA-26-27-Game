@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cpgi63iavt0m0"]
+
+[node name="Node2D" type="Node2D" unique_id=406677717]
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="." unique_id=923799744]
+amount = 200
+lifetime = 5.0
+emission_shape = 3
+emission_rect_extents = Vector2(200, 200)
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 5.0
+initial_velocity_max = 10.0
+color = Color(0.41598046, 0.41598043, 0.4159804, 1)
