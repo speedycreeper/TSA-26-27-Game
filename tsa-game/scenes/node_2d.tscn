@@ -29771,6 +29771,7 @@ speed = 200.0
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=2059570617]
 scale = Vector2(-8670.0205, -30.535679)
 zoom = Vector2(2, 2)
+process_callback = 0
 position_smoothing_enabled = true
 position_smoothing_speed = 10.0
 
